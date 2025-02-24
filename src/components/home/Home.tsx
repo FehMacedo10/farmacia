@@ -1,4 +1,6 @@
 import FarmaciaHome from "../../assets/farmaciaHome.png";
+import ListaCategorias from "../categorias/listacategorias/ListaCategorias";
+import ModalCategoria from "../categorias/modalcategorias/ModalCategoria";
 
 
 function Home() {
@@ -15,10 +17,8 @@ function Home() {
             </p>
 
             <div className="flex justify-around gap-4">
-              <div className='rounded text-white 
-                                          border-white border-solid border-2 py-2 px-4'
-              >
-                Nova Categoria
+              <div className="flex justify-around gap-4">
+                <ModalCategoria />
               </div>
             </div>
           </div>
@@ -32,6 +32,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <ListaCategorias />
     </>
   )
 }
